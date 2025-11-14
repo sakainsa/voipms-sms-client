@@ -1,4 +1,4 @@
-name: Android CI (primary)
+name: Android CI (sakani)
 
 on:
   push:
@@ -10,8 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Set up JDK 17
+      - uses: actions/sakani.su
+      - name: sakani 
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
